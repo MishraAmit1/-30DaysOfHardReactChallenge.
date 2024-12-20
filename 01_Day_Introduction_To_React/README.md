@@ -21,18 +21,17 @@
 ## Table of Contents
 
 - [1. What is React?](#1-what-is-react)
-- [2. Why React?](#2-why-react)
-- [3. JSX](#3-jsx)
+- [2. JSX](#3-jsx)
 
-  - [3.1 JSX Element](#31-jsx-element)
-  - [3.2 Commenting a JSX Element](#32-commenting-a-jsx-element)
-  - [3.3 Rendering a JSX Element](#33-rendering-a-jsx-element)
-  - [3.4 Style and className in JSX](#34-style-and-classname-in-jsx)
-  - [3.5 Injecting Data to a JSX Element](#35-injecting-data-to-a-jsx-element)
-    - [3.5.1 Injecting a String to a JSX Element](#351-injecting-a-string-to-a-jsx-element)
-    - [3.5.2 Injecting a Number to a JSX Element](#352-injecting-a-number-to-a-jsx-element)
-    - [3.5.3 Injecting an Array to a JSX Element](#353-injecting-an-array-to-a-jsx-element)
-    - [3.5.4 Injecting an Object to a JSX Element](#354-injecting-an-object-to-a-jsx-element)
+  - [2.1 JSX Element](#31-jsx-element)
+  - [2.2 Commenting a JSX Element](#32-commenting-a-jsx-element)
+  - [2.3 Rendering a JSX Element](#33-rendering-a-jsx-element)
+  - [2.4 Style and className in JSX](#34-style-and-classname-in-jsx)
+  - [2.5 Injecting Data to a JSX Element](#35-injecting-data-to-a-jsx-element)
+    - [2.5.1 Injecting a String to a JSX Element](#351-injecting-a-string-to-a-jsx-element)
+    - [2.5.2 Injecting a Number to a JSX Element](#352-injecting-a-number-to-a-jsx-element)
+    - [2.5.3 Injecting an Array to a JSX Element](#353-injecting-an-array-to-a-jsx-element)
+    - [2.5.4 Injecting an Object to a JSX Element](#354-injecting-an-object-to-a-jsx-element)
 
 - [4. Exercises](#4-exercises)
   - [4.1 Exercises: What is React?](#41-exercises-what-is-react)
@@ -158,3 +157,64 @@ React is perfect for building SPAs.
 ## 🔗 Explore More
 
 For more details on React, visit the [official documentation](https://reactjs.org/).
+
+# JSX and Rendering in React
+
+## What is JSX?
+
+JSX stands for JavaScript XML. It's a syntax extension for JavaScript that looks similar to HTML, but it's used within JavaScript to describe what the UI should look like. JSX allows us to write HTML elements in JavaScript and place them in the DOM.
+
+## Why Use JSX?
+
+- **Declarative Syntax**: JSX allows developers to write HTML-like structures directly in JavaScript. It is much easier to understand and maintain.
+- **JavaScript Expression Support**: JSX allows embedding JavaScript expressions inside curly braces `{}`.
+
+### Example:
+
+```jsx
+const element = <h1>Hello, world!</h1>;
+```
+
+## ➕ Important Points:
+
+-- JSX is not a requirement for React, but it's widely used because it makes code easier to read and write.
+-- React uses a tool called Babel to convert JSX into regular JavaScript.
+
+#### Commenting a JSX element
+
+We comment codes for different reasons and it is also good to know how to comment out JSX elements in React.
+
+```js
+{
+  /*
+ <header>
+    <h1>Welcome to 30 Days Of React</h1>
+    <h2>Getting Started React</h2>
+    <h3>JavaScript Library</h3>
+    <p>Asabeneh Yetayeh</p>
+    <small>Oct 2, 2020</small>
+  </header>
+
+*/
+}
+```
+
+### Rendering JSX to the DOM
+
+To render JSX to the DOM, we use ReactDOM.render() method. This method takes two arguments:
+
+1. The JSX or React component you want to render.
+2. The DOM element where you want to render the content.
+
+Example:
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+
+const element = <h1>Hello, world!</h1>;
+
+ReactDOM.render(element, document.getElementById("root"));
+```
+
+In this example, the <h1>Hello, world!</h1> JSX is rendered inside the DOM element with the id="root".

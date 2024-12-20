@@ -16,4 +16,4 @@
 
 [<< Day 1](../01_Day_Introduction_To_React/README.md) | [Day 3 >>](../03_Day_Setting_Up/README.md)
 
-![30 Days of Hard React banner](../images/30_days_hard_react_banner.jpg)
+![30 Days of Hard React banner](./images/banner.webp)

@@ -87,3 +87,68 @@ Imagine you're building a **social media app** like Facebook:
 - These elements update dynamically without refreshing the whole page.
 
 ---
+
+# What is SPA (Single-Page Application)?
+
+SPA stands for **Single-Page Application**. It’s a type of web application that loads **one single HTML page** and dynamically updates the content on the page **without reloading the entire page**. This results in a smoother and faster user experience.
+
+React is perfect for building SPAs.
+
+---
+
+## 🔍 Normal Website vs SPA
+
+<details>
+<summary>🔸 **Normal Website (Multi-Page Application)**</summary>
+- Every time a user visits a new page, the entire page reloads from the server.  
+- **Example**: On a blog, moving from "Home" to "About Us" reloads the whole page.
+</details>
+
+<details>
+<summary>🔸 **SPA (Single-Page Application)**</summary>
+- The first page (HTML, CSS, JS) is loaded only once.  
+- After that, data is fetched and updated dynamically, without reloading the entire page.  
+- **Example**: Gmail. When you open a new email, only the email content changes while the rest of the page (header, sidebar) remains unchanged.
+</details>
+
+---
+
+## ⚙️ How Does SPA Work?
+
+<details>
+<summary>Step-by-Step Explanation</summary>
+
+1. **First Load**:  
+   The server sends a single HTML file along with JavaScript.
+
+2. **After That**:
+   - JavaScript (React, for instance) dynamically updates only the parts of the page that need to change.
+   - The **Virtual DOM** helps React figure out what has changed and updates only that part without touching the rest of the page.
+   </details>
+
+---
+
+## 📖 Real-Life Examples of SPA
+
+<details>
+<summary>Examples You Can Relate To</summary>
+
+1. **Facebook Feed**:
+
+   - When you click the "Like" button, only that post gets updated.
+   - The rest of the page stays the same.
+
+2. **Gmail**:
+
+   - Switching between emails updates the content dynamically without reloading the entire app.
+
+3. **Instagram/Twitter**:
+   - Scrolling through the feed or interacting with posts works seamlessly as an SPA.
+
+</details>
+
+---
+
+## 🔗 Explore More
+
+For more details on React, visit the [official documentation](https://reactjs.org/).

@@ -18,26 +18,32 @@
 
 ![30 Days of Hard React banner](./images/banner.webp)
 
+## Table of Contents
+
 - [1. What is React?](#1-what-is-react)
 - [2. Why React?](#2-why-react)
 - [3. JSX](#3-jsx)
-  - [JSX Element](#jsx-element)
-  - [Commenting a JSX element](#commenting-a-jsx-element)
-  - [Rendering a JSX Element](#rendering-a-jsx-element)
-  - [Style and className in JSX](#style-and-classname-in-jsx)
-  - [Injecting data to a JSX Element](#injecting-data-to-a-jsx-element)
-    - [Injecting a string to a JSX Element](#injecting-a-string-to-a-jsx-element)
-    - [Injecting a number to a JSX Element](#injecting-a-number-to-a-jsx-element)
-    - [Injecting an array to a JSX Element](#injecting-an-array-to-a-jsx-element)
-    - [Injecting an object to a JSX Element](#injecting-an-object-to-a-jsx-element)
-- [Exercises](#exercises)
-  - [Exercises: What is React?](#exercises-what-is-react)
-  - [Exercises: Why React?](#exercises-why-react)
-  - [Exercises: JSX](#exercises-jsx)
-  - [Exercises: JSX Elements](#exercises-jsx-elements)
-  - [Exercises: Inline Style](#exercises-inline-style)
-  - [Exercises: Internal Styles](#exercises-internal-styles)
-  - [Exercise: Inject data to JSX](#exercise-inject-data-to-jsx)
+
+  - [3.1 JSX Element](#31-jsx-element)
+  - [3.2 Commenting a JSX Element](#32-commenting-a-jsx-element)
+  - [3.3 Rendering a JSX Element](#33-rendering-a-jsx-element)
+  - [3.4 Style and className in JSX](#34-style-and-classname-in-jsx)
+  - [3.5 Injecting Data to a JSX Element](#35-injecting-data-to-a-jsx-element)
+    - [3.5.1 Injecting a String to a JSX Element](#351-injecting-a-string-to-a-jsx-element)
+    - [3.5.2 Injecting a Number to a JSX Element](#352-injecting-a-number-to-a-jsx-element)
+    - [3.5.3 Injecting an Array to a JSX Element](#353-injecting-an-array-to-a-jsx-element)
+    - [3.5.4 Injecting an Object to a JSX Element](#354-injecting-an-object-to-a-jsx-element)
+
+- [4. Exercises](#4-exercises)
+  - [4.1 Exercises: What is React?](#41-exercises-what-is-react)
+  - [4.2 Exercises: Why React?](#42-exercises-why-react)
+  - [4.3 Exercises: JSX](#43-exercises-jsx)
+  - [4.4 Exercises: JSX Elements](#44-exercises-jsx-elements)
+  - [4.5 Exercises: Inline Style](#45-exercises-inline-style)
+  - [4.6 Exercises: Internal Styles](#46-exercises-internal-styles)
+  - [4.7 Exercise: Inject Data to JSX](#47-exercise-inject-data-to-jsx)
+
+---
 
 ### 1. What is React?
 

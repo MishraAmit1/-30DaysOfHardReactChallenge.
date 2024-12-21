@@ -342,7 +342,7 @@ In this example, the array items is injected into the JSX element, and each item
 
 We can also inject an object into a JSX element, but we need to be careful about how we display its content. One way to handle objects is by using the JSON.stringify() method to convert the object into a string.
 
-````js
+```js
 const user = {
   name: "John Doe",
   age: 25,
@@ -355,5 +355,58 @@ const userInfo = (
   </div>
 );
 ```
+
 In this example, the user object is converted into a string using JSON.stringify() and injected into the JSX element.
-````
+
+🌕 You are awesome. You have just completed day 2 challenges and you are two steps ahead on your way to greatness. Now do some exercises for your brain and for your muscle.
+
+### Exercises
+
+#### Exercises: What is React?
+
+1. What is React?
+2. What is a library?
+3. What is a single page application?
+4. What is a component ?
+5. What is the latest version of React?
+6. What is DOM?
+7. What is React Virtual DOM?
+8. What does a web application or a website(composed of) have?
+
+#### Exercises: Why React?
+
+1. Why did you chose to use react?
+2. What measures do you use to know popularity ?
+3. What is more popular, React or Vue ?
+
+#### Exercises: JSX
+
+1. What is an HTML element?
+2. How to write a self closing HTML element?
+3. What is an HTML attribute? Write some of them
+4. What is JSX?
+5. What is babel?
+6. What is a transpiler?
+
+#### Exercises: JSX Elements
+
+1. What is a JSX element?
+2. Write your name in a JSX element and store it in a name variable
+3. Write a JSX element which displays your full name, country, title, gender, email, phone number. Use h1 for the name and p for the rest of the information and store it in a user variable
+4. Write a footer JSX element
+
+#### Exercises: Inline Style
+
+1. Create a style object for the main JSX
+2. Create a style object for the footer and app JSX
+3. Add more styles to the JSX elements
+
+#### Exercises: Internal Styles
+
+1. Apply different styles to your JSX elements
+
+#### Exercise: Inject data to JSX
+
+1. Practice how to make JSX element and injecting dynamic data(string, number, boolean, array, object)
+
+🎉 CONGRATULATIONS ! 🎉

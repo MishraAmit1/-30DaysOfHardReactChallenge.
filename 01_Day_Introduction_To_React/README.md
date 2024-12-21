@@ -23,7 +23,7 @@
 - [1. What is React?](#1-what-is-react)
 - [2. JSX](#2-jsx)
 
-  - [2.1 JSX Element](#21-jsx-element)
+  - [2.1 What is JSX ](#21-jsx-element)
   - [2.2 Commenting a JSX Element](#32-commenting-a-jsx-element)
   - [2.3 Rendering a JSX Element](#33-rendering-a-jsx-element)
   - [2.4 Style and className in JSX](#34-style-and-classname-in-jsx)
@@ -294,3 +294,66 @@ In this example, the element will have inline styling (blue color and font size 
 ```
 
 This approach combines inline styles with external CSS for better styling management.
+
+#### 2.5 Injecting Data to a JSX Element
+
+So far, we used static data on the JSX elements, but we can also pass different data types as dynamic data. The dynamic data could be a string, number, boolean, array, or object. To inject data into a JSX element, we use curly braces `{}`.
+
+##### 2.5.1 Injecting a String to a JSX Element
+
+We can inject a string directly into a JSX element using curly braces `{}`.
+
+```js
+const name = "Amit Mishra";
+const greeting = <h1>Hello, {name}!</h1>;
+```
+
+In this example, the string "Amit Mishra" is injected into the JSX element.
+
+##### 2.5.2 Injecting a Number to a JSX Element
+
+Similarly, we can inject a number into a JSX element.
+
+```js
+const age = 30;
+const ageMessage = <p>I am {age} years old.</p>;
+```
+
+Here, the number 30 is dynamically injected into the JSX element.
+
+#### 2.5.3 Injecting an Array to a JSX Element
+
+You can also inject an array of values into a JSX element, such as rendering a list of items.
+
+```js
+const items = ["React", "JavaScript", "CSS", "HTML"];
+const itemList = (
+  <ul>
+    {items.map((item, index) => (
+      <li key={index}>{item}</li>
+    ))}
+  </ul>
+);
+```
+
+In this example, the array items is injected into the JSX element, and each item is rendered inside an <li> tag.
+
+#### 2.5.4 Injecting an Object to a JSX Element
+
+We can also inject an object into a JSX element, but we need to be careful about how we display its content. One way to handle objects is by using the JSON.stringify() method to convert the object into a string.
+
+````js
+const user = {
+  name: "John Doe",
+  age: 25,
+  city: "New York",
+};
+
+const userInfo = (
+  <div>
+    <p>{JSON.stringify(user)}</p>
+  </div>
+);
+```
+In this example, the user object is converted into a string using JSON.stringify() and injected into the JSX element.
+````

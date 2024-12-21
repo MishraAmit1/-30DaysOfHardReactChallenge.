@@ -21,9 +21,9 @@
 ## Table of Contents
 
 - [1. What is React?](#1-what-is-react)
-- [2. JSX](#3-jsx)
+- [2. JSX](#2-jsx)
 
-  - [2.1 JSX Element](#31-jsx-element)
+  - [2.1 JSX Element](#21-jsx-element)
   - [2.2 Commenting a JSX Element](#32-commenting-a-jsx-element)
   - [2.3 Rendering a JSX Element](#33-rendering-a-jsx-element)
   - [2.4 Style and className in JSX](#34-style-and-classname-in-jsx)
@@ -158,9 +158,7 @@ React is perfect for building SPAs.
 
 For more details on React, visit the [official documentation](https://reactjs.org/).
 
-# JSX and Rendering in React
-
-## What is JSX?
+### 2. What is JSX?
 
 JSX stands for JavaScript XML. It's a syntax extension for JavaScript that looks similar to HTML, but it's used within JavaScript to describe what the UI should look like. JSX allows us to write HTML elements in JavaScript and place them in the DOM.
 
@@ -177,8 +175,8 @@ const element = <h1>Hello, world!</h1>;
 
 ## ➕ Important Points:
 
--- JSX is not a requirement for React, but it's widely used because it makes code easier to read and write.
--- React uses a tool called Babel to convert JSX into regular JavaScript.
+- **JSX** is not a requirement for React, but it's widely used because it makes code easier to read and write.
+- **React** uses a tool called Babel to convert JSX into regular JavaScript.
 
 #### Commenting a JSX element
 
@@ -199,7 +197,7 @@ We comment codes for different reasons and it is also good to know how to commen
 }
 ```
 
-### Rendering JSX to the DOM
+## Rendering JSX to the DOM
 
 To render JSX to the DOM, we use ReactDOM.render() method. This method takes two arguments:
 
@@ -217,4 +215,82 @@ const element = <h1>Hello, world!</h1>;
 ReactDOM.render(element, document.getElementById("root"));
 ```
 
-In this example, the <h1>Hello, world!</h1> JSX is rendered inside the DOM element with the id="root".
+In this example, (the Hello, world!) JSX is rendered inside the DOM element with the id="root".
+
+#### 2.3 Rendering a JSX Element
+
+To render JSX into the DOM, React uses the ReactDOM.render() method.
+
+Example:
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+
+const element = <h1>Hello, world!</h1>;
+
+ReactDOM.render(element, document.getElementById("root"));
+```
+
+This will render <h1>Hello, world!</h1> inside the DOM element with id="root".
+
+#### 2.4 Style and className in JSX
+
+In JSX, we can add inline styles to elements using the `style` attribute. The `style` attribute in JSX is an object where keys are camelCased CSS properties and values are strings representing the corresponding CSS values.
+
+##### Example 1: Inline Style
+
+```js
+const header = (
+  <header
+    style={{ border: "2px solid orange", color: "black", fontSize: "18px" }}
+  >
+    <h1>Welcome to 30 Days Of React</h1>
+    <h2>Getting Started React</h2>
+    <h3>JavaScript Library</h3>
+    <p>Asabeneh Yetayeh</p>
+    <small>Oct 2, 2020</small>
+  </header>
+);
+```
+
+##### Example 2: Using a Style Object
+
+You can also define the styles outside the JSX element using a JavaScript object and then apply it:
+
+```js
+const style = { border: "2px solid orange", color: "black", fontSize: "18px" };
+
+const header = (
+  <header style={style}>
+    <h1>Welcome to 30 Days Of React</h1>
+    <h2>Getting Started React</h2>
+    <h3>JavaScript Library</h3>
+    <p>Asabeneh Yetayeh</p>
+    <small>Oct 2, 2020</small>
+  </header>
+);
+```
+
+##### Example 3: Using className for CSS Classes
+
+To apply traditional CSS styles (i.e., external or internal styles), we use className in JSX, similar to how we use class in HTML. This allows us to assign CSS classes to elements.
+
+```js
+const element = (
+  <div style={{ color: "blue", fontSize: "20px" }} className="my-class">
+    Hello, styled world!
+  </div>
+);
+```
+
+In this example, the element will have inline styling (blue color and font size of 20px) along with the class my-class. You can define the class in an external CSS file:
+
+```css
+.my-class {
+  font-weight: bold;
+  text-align: center;
+}
+```
+
+This approach combines inline styles with external CSS for better styling management.

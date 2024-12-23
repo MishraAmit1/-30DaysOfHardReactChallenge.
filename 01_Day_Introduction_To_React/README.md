@@ -9,7 +9,7 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/amsmishra/" target="_blank">Amit Mishra</a><br>
-<small> December 20, 2024</small>
+<small> December 22, 2024</small>
 </sub>
 
 </div>
@@ -21,17 +21,17 @@
 ## Table of Contents
 
 - [1. What is React?](#1-what-is-react)
-- [2. JSX](#2-jsx)
+- [2. JSX](#2-what-is-jsx)
 
   - [2.1 What is JSX ](#21-jsx-element)
-  - [2.2 Commenting a JSX Element](#32-commenting-a-jsx-element)
-  - [2.3 Rendering a JSX Element](#33-rendering-a-jsx-element)
-  - [2.4 Style and className in JSX](#34-style-and-classname-in-jsx)
-  - [2.5 Injecting Data to a JSX Element](#35-injecting-data-to-a-jsx-element)
-    - [2.5.1 Injecting a String to a JSX Element](#351-injecting-a-string-to-a-jsx-element)
-    - [2.5.2 Injecting a Number to a JSX Element](#352-injecting-a-number-to-a-jsx-element)
-    - [2.5.3 Injecting an Array to a JSX Element](#353-injecting-an-array-to-a-jsx-element)
-    - [2.5.4 Injecting an Object to a JSX Element](#354-injecting-an-object-to-a-jsx-element)
+  - [2.2 Commenting a JSX Element](#2.2-commenting-a-jsx-element)
+  - [2.3 Rendering a JSX Element](#2.3-rendering-a-jsx-element)
+  - [2.4 Style and className in JSX](#2.4-style-and-classname-in-jsx)
+  - [2.5 Injecting Data to a JSX Element](#2.5-injecting-data-to-a-jsx-element)
+    - [2.5.1 Injecting a String to a JSX Element](#2.5.1-injecting-a-string-to-a-jsx-element)
+    - [2.5.2 Injecting a Number to a JSX Element](#2.5.2-injecting-a-number-to-a-jsx-element)
+    - [2.5.3 Injecting an Array to a JSX Element](#2.5.3-injecting-an-array-to-a-jsx-element)
+    - [2.5.4 Injecting an Object to a JSX Element](#2.5.4-injecting-an-object-to-a-jsx-element)
 
 - [4. Exercises](#4-exercises)
   - [4.1 Exercises: What is React?](#41-exercises-what-is-react)
@@ -44,7 +44,7 @@
 
 ---
 
-### 1. What is React?
+### 1. <h2 id="1-what-is-react">What is React?</h2>
 
 # React: A Powerful JavaScript Library
 
@@ -158,7 +158,7 @@ React is perfect for building SPAs.
 
 For more details on React, visit the [official documentation](https://reactjs.org/).
 
-### 2. What is JSX?
+### 2. <h2 id="1-what-is-jsx">What is JSX?</h2>
 
 JSX stands for JavaScript XML. It's a syntax extension for JavaScript that looks similar to HTML, but it's used within JavaScript to describe what the UI should look like. JSX allows us to write HTML elements in JavaScript and place them in the DOM.
 
@@ -178,7 +178,7 @@ const element = <h1>Hello, world!</h1>;
 - **JSX** is not a requirement for React, but it's widely used because it makes code easier to read and write.
 - **React** uses a tool called Babel to convert JSX into regular JavaScript.
 
-#### Commenting a JSX element
+### 2.1. <h2 id="2.2-commenting-a-jsx-element">Commenting a JSX element</h2>
 
 We comment codes for different reasons and it is also good to know how to comment out JSX elements in React.
 

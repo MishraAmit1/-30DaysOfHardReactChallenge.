@@ -826,3 +826,374 @@ export default App;
 ### 4. Why would you use JSX to inject data?
 
 - **Answer**: JSX allows injecting dynamic data like variables, expressions, and functions into elements, making it easier to render dynamic content. This is done using `{}` syntax.
+
+# Create React App
+
+## Method 1: Using Create React App (CRA)
+
+### Step 1: Install Node.js
+
+First, install Node.js. NPM (Node Package Manager) comes bundled with Node.js.
+
+### Step 2: Create a New React App
+
+Run the following command to create a React app:
+
+```bash
+npx create-react-app my-app
+```
+
+- `npx`: Node Package Runner that allows running packages without globally installing them.
+- `my-app`: The name of your project.
+
+Wait until all dependencies are installed.
+
+### Step 3: Run the App
+
+1. Navigate to the project directory:
+   ```bash
+   cd my-app
+   ```
+2. Start the development server:
+   ```bash
+   npm start
+   ```
+3. Open your browser and visit [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Method 2: Using Vite
+
+### Why Vite?
+
+- **Faster builds**: Vite offers better performance than CRA.
+- **Hot Module Replacement (HMR)**: Instantly updates changes.
+- **Lightweight**: Works with minimal configuration.
+
+### Step 1: Install Node.js
+
+Ensure Node.js is installed.
+
+### Step 2: Create a React App Using Vite
+
+Run the following command:
+
+```bash
+npm create vite@latest my-vite-app
+```
+
+1. Select `React` and then choose `React + JavaScript` (or `TypeScript` if you prefer).
+2. Move to the project directory:
+   ```bash
+   cd my-vite-app
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Step 3: Run the App
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit [http://localhost:5173](http://localhost:5173).
+
+---
+
+## Method 3: Using Bun
+
+### Why Bun?
+
+- **Superfast installs**: Bun is significantly faster than NPM and Yarn.
+- **Built-in tools**: Acts as a bundler and transpiler.
+- **Efficient runtime**: Handles both JavaScript and TypeScript efficiently.
+
+### Step 1: Install Bun
+
+1. Install Bun from its official site: [Bun.sh](https://bun.sh).
+2. Use this command to install:
+   ```bash
+   curl -fsSL https://bun.sh/install | bash
+   ```
+
+### Step 2: Create a React App Using Bun
+
+Create a new React app:
+
+```bash
+bun create react my-bun-app
+```
+
+1. Move to the project directory:
+   ```bash
+   cd my-bun-app
+   ```
+
+### Step 3: Run the App
+
+Start the development server:
+
+```bash
+bun dev
+```
+
+Open your browser and visit [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Comparison: CRA vs Vite vs Bun
+
+| Feature                    | CRA               | Vite        | Bun               |
+| -------------------------- | ----------------- | ----------- | ----------------- |
+| **Speed**                  | Slow              | Fast        | Fastest           |
+| **Configuration**          | Minimal           | Minimal     | Minimal           |
+| **Hot Module Replacement** | Supported         | Superfast   | Superfast         |
+| **Bundling**               | Webpack           | ESBuild     | Bun's Built-in    |
+| **Use Case**               | Beginner-friendly | Modern apps | Performance focus |
+
+---
+
+## Interview Questions
+
+1. **What is Create React App (CRA)? Why is it used?**
+
+   - CRA is a boilerplate tool that provides a ready-to-use structure for creating React applications.
+
+2. **Why should you consider using Vite over CRA?**
+
+   - Vite offers faster builds and better HMR, making it more efficient for large-scale applications.
+
+3. **What is Bun, and how does it differ from NPM?**
+
+   - Bun is a JavaScript runtime that is significantly faster than NPM and Yarn, and it provides built-in tools.
+
+4. **What is the default port for CRA and Vite?**
+
+   - CRA: [http://localhost:3000](http://localhost:3000)
+   - Vite: [http://localhost:5173](http://localhost:5173)
+
+5. **How do you start a React project using Bun?**
+
+   ```bash
+   bun create react <app-name>
+   cd <app-name>
+   bun dev
+
+   ```
+
+# Exercises: Level 1
+
+## 1. Display an Image in React
+
+**Objective:** Import an image from the `src/` folder and display it in your React component.
+
+**Instructions:**
+
+- Import an image in your React component using `import`.
+- Render the image using the `<img>` tag.
+
+```jsx
+import React from "react";
+import logo from "./logo.png"; // Replace with the correct path
+
+function App() {
+  return (
+    <div>
+      <img src={logo} alt="Logo" />
+    </div>
+  );
+}
+
+export default App;
+```
+
+## 2. Display Your Name with Dynamic Data in JSX
+
+Objective: Inject dynamic data (string) into JSX and display it in your app.
+
+Instructions:
+
+Create a variable that stores your name.
+Render the name in JSX.
+
+```jsx
+import React from "react";
+
+function App() {
+  const name = "Amit Mishra"; // Dynamic data
+  return (
+    <div>
+      <h1>{name}</h1> {/* Injecting dynamic data */}
+    </div>
+  );
+}
+
+export default App;
+```
+
+# Exercises: Level 2
+
+## 1. Use Audio or Video in React
+
+Objective: Import an audio or video file and display it using the appropriate HTML tags.
+
+Instructions:
+
+Import an audio or video file.
+Render the <audio> or <video> tag with the media file.
+
+```jsx
+import React from "react";
+import myAudio from "./audio.mp3"; // Replace with correct path
+
+function App() {
+  return (
+    <div>
+      <audio controls>
+        <source src={myAudio} type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  );
+}
+
+export default App;
+```
+
+2. Implement a Custom Font in React
+   Objective: Use a custom font from Google Fonts.
+
+Instructions:
+
+Import a font from Google Fonts in your index.html or CSS file.
+Apply the font to your component.
+
+```jsx
+import React from "react";
+import "./App.css"; // Import the CSS file
+
+function App() {
+  return (
+    <div>
+      <h1 className="custom-font">Hello, World!</h1>
+    </div>
+  );
+}
+
+export default App;
+```
+
+In App.css:
+
+```css
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.custom-font {
+  font-family: "Roboto", sans-serif;
+}
+```
+
+# Exercises: Level 3
+
+## 1. Create a Responsive Layout with Images and Media
+
+Objective: Build a small layout using images and media files that is responsive.
+
+Instructions:
+
+Use images, videos, and audio in a responsive layout.
+Make sure the layout adapts to different screen sizes.
+
+```jsx
+import React from "react";
+import logo from "./logo.png";
+import myVideo from "./video.mp4";
+
+function App() {
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>My Media Gallery</h1>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <img
+          src={logo}
+          alt="Logo"
+          style={{ width: "50%", marginBottom: "20px" }}
+        />
+        <video width="320" height="240" controls>
+          <source src={myVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+```
+
+## 2. Build a Gallery with Multiple Media Types
+
+Objective: Create a small gallery using a combination of images, videos, and audio files.
+
+Instructions:
+
+Create a component that renders multiple media files (images, videos, and audio) in a gallery style.
+Use flexbox or grid to organize the media in rows and columns.
+
+```jsx
+import React from "react";
+import logo from "./logo.png";
+import myAudio from "./audio.mp3";
+import myVideo from "./video.mp4";
+
+function App() {
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>Media Gallery</h1>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "20px",
+        }}
+      >
+        <img src={logo} alt="Logo" style={{ width: "100%" }} />
+        <audio controls style={{ width: "100%" }}>
+          <source src={myAudio} type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+        <video width="100%" controls>
+          <source src={myVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+```
+
+# Interview Questions
+
+How do you import images and media files in React?
+You can import images or media files from the src/ folder using import, or from the public/ folder by referencing the file path directly.
+
+How do you add custom fonts in React?
+Custom fonts can be added by importing them through a <link> tag in index.html or by using @import in a CSS file. Then, you apply the font to elements using CSS.
+
+What is the benefit of using public/ folder for media files?
+Media files in the public/ folder can be accessed via URL directly, and they won’t be bundled by Webpack, which may be useful for static assets.
+
+How do you make media elements responsive in React?
+You can use inline styles or CSS media queries to make media elements responsive. For example, setting width: 100% for images or videos allows them to adjust according to the screen size.

@@ -13,6 +13,7 @@
 </sub>
 
 </div>
+![30 Days of Hard React banner](../01_Day_Introduction_To_React/images/banner.webp)
 
 - [Setting Up](#setting-up)
   - [Node](#node)
@@ -442,6 +443,164 @@ For use only within the current project:
 npm install <package-name>
 
 ```
+
+# Create React App
+
+## Method 1: Using Create React App (CRA)
+
+### Step 1: Install Node.js
+
+First, install Node.js. NPM (Node Package Manager) comes bundled with Node.js.
+
+### Step 2: Create a New React App
+
+Run the following command to create a React app:
+
+```bash
+npx create-react-app my-app
+```
+
+- `npx`: Node Package Runner that allows running packages without globally installing them.
+- `my-app`: The name of your project.
+
+Wait until all dependencies are installed.
+
+### Step 3: Run the App
+
+1. Navigate to the project directory:
+   ```bash
+   cd my-app
+   ```
+2. Start the development server:
+   ```bash
+   npm start
+   ```
+3. Open your browser and visit [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Method 2: Using Vite
+
+### Why Vite?
+
+- **Faster builds**: Vite offers better performance than CRA.
+- **Hot Module Replacement (HMR)**: Instantly updates changes.
+- **Lightweight**: Works with minimal configuration.
+
+### Step 1: Install Node.js
+
+Ensure Node.js is installed.
+
+### Step 2: Create a React App Using Vite
+
+Run the following command:
+
+```bash
+npm create vite@latest my-vite-app
+```
+
+1. Select `React` and then choose `React + JavaScript` (or `TypeScript` if you prefer).
+2. Move to the project directory:
+   ```bash
+   cd my-vite-app
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Step 3: Run the App
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit [http://localhost:5173](http://localhost:5173).
+
+---
+
+## Method 3: Using Bun
+
+### Why Bun?
+
+- **Superfast installs**: Bun is significantly faster than NPM and Yarn.
+- **Built-in tools**: Acts as a bundler and transpiler.
+- **Efficient runtime**: Handles both JavaScript and TypeScript efficiently.
+
+### Step 1: Install Bun
+
+1. Install Bun from its official site: [Bun.sh](https://bun.sh).
+2. Use this command to install:
+   ```bash
+   curl -fsSL https://bun.sh/install | bash
+   ```
+
+### Step 2: Create a React App Using Bun
+
+Create a new React app:
+
+```bash
+bun create react my-bun-app
+```
+
+1. Move to the project directory:
+   ```bash
+   cd my-bun-app
+   ```
+
+### Step 3: Run the App
+
+Start the development server:
+
+```bash
+bun dev
+```
+
+Open your browser and visit [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Comparison: CRA vs Vite vs Bun
+
+| Feature                    | CRA               | Vite        | Bun               |
+| -------------------------- | ----------------- | ----------- | ----------------- |
+| **Speed**                  | Slow              | Fast        | Fastest           |
+| **Configuration**          | Minimal           | Minimal     | Minimal           |
+| **Hot Module Replacement** | Supported         | Superfast   | Superfast         |
+| **Bundling**               | Webpack           | ESBuild     | Bun's Built-in    |
+| **Use Case**               | Beginner-friendly | Modern apps | Performance focus |
+
+---
+
+## Interview Questions
+
+1. **What is Create React App (CRA)? Why is it used?**
+
+   - CRA is a boilerplate tool that provides a ready-to-use structure for creating React applications.
+
+2. **Why should you consider using Vite over CRA?**
+
+   - Vite offers faster builds and better HMR, making it more efficient for large-scale applications.
+
+3. **What is Bun, and how does it differ from NPM?**
+
+   - Bun is a JavaScript runtime that is significantly faster than NPM and Yarn, and it provides built-in tools.
+
+4. **What is the default port for CRA and Vite?**
+
+   - CRA: [http://localhost:3000](http://localhost:3000)
+   - Vite: [http://localhost:5173](http://localhost:5173)
+
+5. **How do you start a React project using Bun?**
+
+   ```bash
+   bun create react <app-name>
+   cd <app-name>
+   bun dev
+
+   ```
 
 # Visual Studio Code (VS Code)
 

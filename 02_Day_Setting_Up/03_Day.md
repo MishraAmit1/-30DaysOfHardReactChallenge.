@@ -13,6 +13,7 @@
 </sub>
 
 </div>
+</div>
 ![30 Days of Hard React banner](../01_Day_Introduction_To_React/images/banner.webp)
 
 - [Setting Up](#setting-up)

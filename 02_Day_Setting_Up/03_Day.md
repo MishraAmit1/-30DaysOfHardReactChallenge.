@@ -9,10 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/amsmishra/" target="_blank">Amit Mishra</a><br>
-<small> December 22, 2024</small>
+<small> December 20, 2024</small>
 </sub>
 
 </div>
+
+[<< Day 1](../01_Day_Introduction_To_React/README.md) | [Day 3 >>](../03_Day_Setting_Up/README.md)
+
 ![30 Days of Hard React banner](../01_Day_Introduction_To_React/images/banner.webp)
 
 - [Setting Up](#setting-up)
@@ -642,3 +645,184 @@ Download VS Code from the official website and install it.
 Settings mein `formatOnSave` enable karo:
 
 Go to Settings ⚙️ > Search for "Format On Save" > Enable it.
+
+# React Boilerplate and Styles in JSX
+
+In this section, we will learn about React Boilerplate and Styles in JSX in detail.
+
+## 1. React Boilerplate
+
+React Boilerplate provides a basic structure commonly used in React projects. Its goal is to provide a clean and organized setup for starting React development.
+
+### Basic React Boilerplate Structure
+
+When you use tools like Create React App, Vite, or Bun, a typical folder structure looks like this:
+
+```plaintext
+my-app/
+├── node_modules/            # Dependencies
+├── public/
+│   ├── index.html           # Main HTML file
+│   └── favicon.ico          # Favicon
+├── src/
+│   ├── assets/              # Images, videos, fonts
+│   ├── components/          # Reusable components (e.g., Header, Footer)
+│   ├── App.js               # Main App Component
+│   ├── index.js             # Entry point of the React app
+│   └── styles.css           # Global styles
+├── .gitignore               # Git ignore file
+├── package.json             # Project configuration file
+└── README.md                # Project documentation
+```
+
+### Important Files
+
+- **index.html (in `public/`)**: This file loads the React app. It contains `<div id="root"></div>` where the React app is rendered.
+- **index.js (in `src/`)**: This is the entry point for the React app. It initializes React and renders `App.js` into the root div.
+- **App.js (in `src/`)**: This is the main component of the React app where all components are organized.
+
+---
+
+## 2. Styles in JSX
+
+React supports inline styles and CSS-in-JS for styling components. Styles written directly within JSX are called "Styles in JSX."
+
+### Inline Styles
+
+Inline styles in React are written as JavaScript objects, where CSS properties are written in camelCase (e.g., `backgroundColor` instead of `background-color`).
+
+#### Example: Inline Styles in JSX
+
+```jsx
+import React from "react";
+
+function App() {
+  const headerStyle = {
+    color: "blue",
+    fontSize: "40px",
+    textAlign: "center",
+  };
+
+  return (
+    <div>
+      <h1 style={headerStyle}>Welcome to React</h1>
+      <p>This is a sample React app with inline styling.</p>
+    </div>
+  );
+}
+
+export default App;
+```
+
+- **`headerStyle`**: A JavaScript object applied to the `h1` element.
+- CSS properties must be written in **camelCase**.
+
+### CSS-in-JS Libraries (e.g., Styled Components)
+
+For complex styles, you can use libraries like `styled-components` to encapsulate styles within components.
+
+#### Example: Using Styled Components
+
+First, install the library:
+
+```bash
+npm install styled-components
+```
+
+Then, create styled components:
+
+```jsx
+import React from "react";
+import styled from "styled-components";
+
+const Header = styled.h1`
+  color: blue;
+  font-size: 40px;
+  text-align: center;
+`;
+
+function App() {
+  return (
+    <div>
+      <Header>Welcome to React</Header>
+      <p>This is a sample React app with styled-components.</p>
+    </div>
+  );
+}
+
+export default App;
+```
+
+- **Styled Components**: Styles are directly defined in the component.
+
+---
+
+## Injecting Data into JSX Elements
+
+In React, you can inject dynamic data into JSX using curly braces `{}`. This allows you to insert JavaScript variables, expressions, or functions into HTML elements.
+
+#### Example: Injecting Data into JSX
+
+```jsx
+import React from "react";
+
+function App() {
+  const name = "Amit Mishra";
+  const age = 25;
+  const isMember = true;
+
+  return (
+    <div>
+      <h1>{`Hello, ${name}`}</h1>
+      <p>{`Age: ${age}`}</p>
+      <p>{isMember ? "Member" : "Not a Member"}</p>
+    </div>
+  );
+}
+
+export default App;
+```
+
+- **Curly Braces `{}`**: Used to inject JavaScript variables into JSX.
+- **Conditional Rendering**: `isMember` checks and displays either "Member" or "Not a Member."
+
+---
+
+## 3. Exercises on React Boilerplate & Styles in JSX
+
+### Exercise 1: Basic React App with Inline Styling
+
+1. Create a simple React app with a header styled in blue.
+2. Add a paragraph that injects a dynamic `name` variable.
+
+### Exercise 2: Creating a Styled Component
+
+1. Install `styled-components`.
+2. Create a component with styles defined inside the component using `styled-components`.
+
+---
+
+## Interview Questions: React Boilerplate & Styles in JSX
+
+### 1. What is the folder structure of a typical React app?
+
+- **Answer**: The typical structure includes:
+  - `public/` folder with `index.html`.
+  - `src/` folder with React components and entry files like `App.js` and `index.js`.
+  - `package.json` for dependencies.
+
+### 2. How do you apply inline styles in React?
+
+- **Answer**: Inline styles are written as a JavaScript object with properties in camelCase.
+  ```jsx
+  const style = { color: "blue" };
+  <h1 style={style}>Hello</h1>;
+  ```
+
+### 3. What are styled-components in React?
+
+- **Answer**: Styled-components is a library that allows defining styles directly in React components, encapsulating styles within the component.
+
+### 4. Why would you use JSX to inject data?
+
+- **Answer**: JSX allows injecting dynamic data like variables, expressions, and functions into elements, making it easier to render dynamic content. This is done using `{}` syntax.

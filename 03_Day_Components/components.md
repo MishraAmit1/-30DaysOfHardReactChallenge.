@@ -18,24 +18,22 @@
 
 ![30 Days of Hard React banner](../images/banner.webp)
 
-- [Setting Up](#setting-up)
-  - [Node](#node)
-  - [Module](#module)
-  - [Package](#package)
-  - [Node Package Manager(NPM)](#node-package-managernpm)
-  - [Visual Studio Code](#visual-studio-code)
-  - [Browser](#browser)
-  - [Visual Studio Extensions](#visual-studio-extensions)
-  - [Create React App](#create-react-app)
-- [Your first React App](#your-first-react-app)
-  - [React Boilerplate](#react-boilerplate)
-  - [Styles in JSX](#styles-in-jsx)
-  - [Injecting data to JSX elements](#injecting-data-to-jsx-elements)
-  - [Importing Media Objects in React](#importing-media-objects-in-react)
-- [Exercises](#exercises)
-  - [Exercises: Level 1](#exercises-level-1)
-  - [Exercises: Level 2](#exercises-level-2)
-  - [Exercises: Level 3](#exercises-level-3)
+# Table of Contents
+
+1. [What are React Components?](#1-what-are-react-components)
+2. [Types of Components](#2-types-of-components)
+   - [Functional Components](#a-functional-components)
+   - [Class Components](#b-class-components)
+3. [Parent and Child Components](#3-parent-and-child-components)
+4. [JSX (JavaScript XML)](#4-jsx-javascript-xml)
+5. [Combining Components](#5-combining-components)
+6. [Reusability (Using Components Multiple Times)](#6-reusability-using-components-multiple-times)
+7. [Pure Components](#7-pure-components)
+8. [Functional vs Class Components](#8-functional-vs-class-components)
+9. [Tasks for Practice](#9-tasks-for-practice)
+   - [Exercises: Level 1](#exercises-level-1)
+   - [Exercises: Level 2](#exercises-level-2)
+   - [Exercises: Level 3](#exercises-level-3)
 
 # React Components: Detailed Overview
 
@@ -266,14 +264,41 @@ export default MyComponent;
 
 ## **9. Tasks for Practice**
 
-1. Create a **Header Component** to show the app's title.
-2. Create a **Footer Component** to display copyright details.
-3. Build a **Card Component** to render `title`, `description`, and a `button`.
+## Exercises: Level 1
+
+1. What is the difference between a regular function and an arrow function?
+2. What is a React Component?
+3. How do you make a React functional component?
+4. What is the difference between a pure JavaScript function and a functional component?
+5. How small should a React component be?
+6. Can we make a button or input field a component?
+7. **Task**: Make a reusable Button component.
+8. **Task**: Make a reusable InputField component.
+9. **Task**: Create a reusable alert box component with:
+   - A single `div` parent element.
+   - A `p` child element inside the `div` for displaying messages (e.g., warning alert box, success alert box).
 
 ---
 
-## **Your Tasks**
+## Exercises: Level 2
 
-1. Use the Header and Footer components inside the App component.
-2. Reuse the Card component 3 times with different data each time.
-3. If you have any doubts, feel free to ask!
+1. **Task**: Create functional components and display the following images:
+   - Use any images or placeholder content representing frontend-related visuals.
+2. **Task**: Use functional components to create a design for a **Newsletter Signup Form**.
+   - Include fields like Email, a Subscribe button, and a title.
+
+---
+
+## Exercises: Level 3
+
+1. **Task**: Use the given hexadecimal color generator example to create random colors dynamically.
+   - Generate a list of colorful `div` boxes.
+2. **Task**: Use functional components to design a **User Card**.
+   - Include a profile picture, username, and a short description.
+   - Make it visually appealing and styled using CSS.
+
+---
+
+## 🎉 CONGRATULATIONS! 🎉
+
+You've completed the exercises for React Components! 🚀

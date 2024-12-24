@@ -18,7 +18,7 @@
 
 ![30 Days of Hard React banner](./images/banner.webp)
 
-## Table of Contents
+# Table of Contents
 
 1. [What is React?](#what-is-react)
 
